@@ -2,12 +2,12 @@ import { Movie } from "../domain/movie.js";
 import { MoviesRepository } from "../domain/movies_repository.js";
 import { createPool } from "mysql2/promise";
 
-const pool = createPool({ //Cambiar credenciales
-  host: "localhost",
-  user: "root",
-  password: "MYSQLUlises",
+export const pool = createPool({
+  host: "sql10.freesqldatabase.com",
+  user: "sql10619742",
+  password: "9mFwwBqtAv",
   port: 3306,
-  database: "shortflix",
+  database: "sql10619742",
 });
 
 export class MemoryMoviesRepository extends MoviesRepository{
